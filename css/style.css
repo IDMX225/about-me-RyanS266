@@ -1,0 +1,29 @@
+body {
+    font-family:Roboto; 
+    font-size:15pt;
+    background-color: #8692A8;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family:Almendra;
+    font-size:35pt; 
+}
+
+header {
+    text-align:center;
+}
+
+#intro, footer {
+    border: 5px solid #A4B0FA;
+    background-color:#63BBE5;
+    text-align:center;
+    padding:10px;
+}
+
+#intro img {
+    width:300px;
+}
+
+#bio {
+    text-align:center;
+}
