@@ -5,10 +5,12 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family:Almendra;
-    font-size:35pt; 
+    font-family:Almendra;  
+    text-align: center;
 }
-
+h1 {
+    font-size: 40pt;
+}
 header {
     text-align:center;
 }
@@ -26,4 +28,26 @@ header {
 
 #bio {
     text-align:center;
+}
+
+#hobbies {
+    ul {
+        list-style: none;
+        padding: 0;
+      }
+    li:hover {
+    color: #8e1df8;
+    font-weight: bold;
+    transition: 0.1s;
+    }
+    li::before {
+    content: "►";
+    color: #000000;
+    font-weight: bold;
+    margin-right: 8px;
+    transition: color 0.1s ease-in-out;
+  }
+    li:hover::before {
+    color: #8e1df8;
+  }   
 }
