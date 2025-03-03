@@ -22,13 +22,19 @@ header {
     padding:10px;
 }
 
+/* intro section */
+
 #intro img {
     width:300px;
 }
 
+/* bio section */
+
 #bio {
     text-align:center;
 }
+
+/* hobbies section */
 
 #hobbies {
     ul {
@@ -50,4 +56,22 @@ header {
     li:hover::before {
     color: #8e1df8;
   }   
+}
+
+/* Gallery section */
+
+#gallery {
+    border: 5px solid #A4B0FA;
+    background-color:#63BBE5;
+}
+
+#gallery img {
+    max-width: 100%;
+    border-radius: 150px
+
+}
+
+#gallery figure {
+    text-align: center;
+
 }
