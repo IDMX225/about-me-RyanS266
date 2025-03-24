@@ -91,7 +91,7 @@ header {
 
 #lit div {
     padding: 2rem;
-    max-width: 40rem;
+    max-width: 30rem;
     margin: 0 auto;
 }
 
@@ -139,7 +139,7 @@ header {
 
 #lit div {
     max-width: 100%;
-    columns: 40rem;
+    columns: 30rem;
     }
 
 }
