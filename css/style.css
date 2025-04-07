@@ -99,6 +99,13 @@ header {
     padding: 0.3rem 0;
     clear: both;
 }
+/* Video section */
+#video { 
+    justify-content: center;
+    text-align: center;
+    
+
+}
 
 /* Dropcaps */
 
