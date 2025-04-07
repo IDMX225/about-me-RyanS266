@@ -99,13 +99,28 @@ header {
     padding: 0.3rem 0;
     clear: both;
 }
-/* Video section */
-#video { 
-    justify-content: center;
-    text-align: center;
-    
 
-}
+/* Video section */
+#video-container {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0 20px;
+
+  }
+#fixed-iframe {
+    width: 560px;  
+    height: 315px; 
+  }
+#fixed-iframe iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+
+
+
+
+
 
 /* Dropcaps */
 
