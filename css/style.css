@@ -117,7 +117,11 @@ header {
     border: none;
   }
 
+/* Contact Form */
 
+#formElements {
+    display:grid;
+}    
 
 
 
