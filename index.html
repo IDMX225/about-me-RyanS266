@@ -17,14 +17,31 @@
         <!--header shows logo and page title-->
         <nav class="navbar">
             <div class="logo">
-                <img src="img/bob.svg" alt="Blue origami logo">
+                <img src="img/rslogo.svg" alt="initials logo">
                 <h1>Web Dev I</h1>
             </div>
+ 
+    <!-- Hamburger  -->
+    <input type="checkbox" id="nav__checkbox" class="nav__checkbox">
+    <label for="nav__checkbox" class="nav__toggle">
+
+      <!-- menu icon -->
+      <svg class="menu" viewBox="0 0 448 512" width="30" title="bars">
+        <path d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163
+         16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163
+          16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z" />
+      </svg>
+
+      <!-- close icon -->
+      <svg class="close" viewBox="0 0 384 512" width="30" title="times">
+        <path d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z" />
+      </svg>
+    </label>
              <div class="navbar-links">
                 <ul>
                     <li><a href="#bio">Bio</a></li>
                     <li><a href="#gallery">Gallery</a></li>
-                    <li><a href="#lit">Blog</a></li>
+                    <li><a href="#blog">Blog</a></li>
                     <li><a href="#contact">Contact Me</a></li>
                 </ul>
             </div>
@@ -35,9 +52,8 @@
         <!--main envelops important page content-->
         <section id="intro">
         <!--name profile image location-->
-            <img src="img/avataaars.png" alt="Avatar picture of me">
+            <img src="img/selfie.png" alt="Avatar picture of me">
             <div>
-
                 <p>Ryan Sorocina</p>
                 <p>Manville, NJ</p>
             </div>
@@ -47,105 +63,129 @@
         <section id="bio">
         <!--bio and some stuff--> 
 
-        <h2>-Biography-</h2>
+        <h2>About Me</h2>
             <div>
                 
-                <P>I want to be...</P>
-                <p>an IT specialist maintaining and repairing computers and networks. </p>
-                <p>My favorite season is...</p>
-                <p>Summer beause there is so many activities you can do outdoors. </p>
-    
-            </div>
+                <P>
+                    Hey, my name is Ryan Sorocina. I am currently working on getting my associate's degree in Information Systems and Technology at 
+                Raritan Valley Community College. Once I graduate from RVCC, I plan on transferring colleges to work on getting a bachelor's degree.
+                I'm not too fond of coding because of prior experiences when I was in high school, but I've always had an interest in computers 
+                and how they work which is why I chose this career path. 
+                </P>
+                
+                <P>
+                    One of my biggest hobbies is traveling around the world. Some of the places I have visited are Slovakia, Dominican Republic, Mexico, Jamaica,
+                     Aruba, and Hawaii. As of recent, because of school and work I haven't had the opportunity to travel, but once I have more time on my hands I plan to
+                    visit more countries that I have not been to yet. Some other hobbies of mine are working out at the gym, specifically weight lifting. I've been 
+                    going to the gym for quite some time now and I really enjoy just weight lifting in general. Seeing progress being made within months makes me more and more
+                    motivated to keep pushing myself at the gym. Playing video games with friends in person and online has always been something I really enjoy. I have fun collecting retro games and getting
+                    a chance to play them for nostalgia. It's like time-traveling back in time when things felt more carefree and just getting absorbed into a virtual world without any
+                    real world distractions. Playing online competitively has also been a major driving factor regarding playing video games. 
+                </P>
+                     
+        </div>
         <!-- close section here-->   
         </section>
 
-        <section id="hobbies">
-
-                <h2>-Hobbies-</h2>
-
-                <ul>
-                    <li>Traveling</li>
-                    <li>Playing Videogames</li>
-                    <li>Drawing</li>
-                    <li>Lifting/working out</li>
-                    <li>Building computers</li>
-                    <li>Collecting all sorts of stuff</li>
-
-                </ul>
-        </section>
-
+        <!-- gallery --> 
         <section id="gallery">
-
             <h2>Photo gallery</h2>
-
-            <hr>
-            <figure>
-                <img src="img/boat-640w.jpg.jpg" alt="boat in water">
-                <figcaption>Luminous Lagoon located in Falmouth, Jamaica.</figcaption>
-            </figure> 
-            <hr>
-            <figure>
-                <img src="img/hawaii-640w.jpg.jpg" alt="temple in hawaii">
-                <figcaption>Byodo-In Temple located in Ahuimanu, Hawaii</figcaption>
-            </figure>
-            <hr>
-            <figure>
-                <img src="img/skcastle-640w.jpg.jpg" alt="slovak castle">
-                <figcaption>Spiš Castle located in Slovakia </figcaption>
-            </figure>
-        </section>
-
-        <section id="lit"> 
-
-            <h2>Lorem Ipsum </h2>
-
-            <div>
-
+            <div class="gallery-grid">
+                <figure>
+                    <img src="img/boat-640w.jpg" alt="boat in water">
+                    <figcaption>Luminous Lagoon located in Falmouth, Jamaica.</figcaption>
+                </figure>
+                <figure>
+                    <img src="img/hawaii-640w.jpg" alt="temple in hawaii">
+                    <figcaption>Byodo-In Temple located in Ahuimanu, Hawaii</figcaption>
+                </figure>
+                <figure>
+                    <img src="img/skcastle-640w.jpg" alt="slovak castle">
+                    <figcaption>Spiš Castle located in Slovakia </figcaption>
+                </figure>
+                </div>
+                 </section>
+        <!-- blog section here --> 
+        <section id="blog">
+            <h2>Image Hover Effects</h2>
+               
+            <div class="content-layout">
+                <div class="text-content">
+                 <p>
+                    A common way to give websites more visual appeal and interactivity is to use CSS image hover effects.
+                    When hovering over images, these effects allow users to interact with them through movement,
+                    transformation, or aesthetic changes. They often appear in blogs, landing sites, product galleries,
+                    and portfolios to improve user experience by adding interactive elements to plain information.
+                </p>
+        
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    The most common types of hover effects include zooming, fading, rotating, adding borders or overlays,
+                    and changing brightness or contrast. For example, a cursor hovering over an image can cause it to darken
+                    or increase somewhat, giving instant visual feedback and promoting user engagement.
+                </p>
+        
+                <p>
+                    Modern CSS makes it simple to implement these effects. Using CSS transitions when combined with the
+                    ":hover" pseudo-class is one of the most basic and efficient techniques.
+                    Here is an example below, the following CSS is used to make an image scale up slightly when
+                    hovering over it with your mouse cursor.
+                </p>
+        <!-- code example --> 
+        <div class="blog-code">
+            <img src="img/codeexamp1.png" alt="Code Example">
+        </div>
+        
+                <p>
+                    Below is a live example demonstrating a few hover effects including zoom,
+                     rotation and blur. Hover over each image to see the effect.
+                </p>
+
+                <div class="image-gallery">
+                    <div class="card hover-effect">
+                        <img src="img/examp1.jpg" alt="Zoom effect" class="hover-zoom">
+                    </div>
+                    <div class="card hover-effect">
+                        <img src="img/examp2.jpg" alt="Rotate effect" class="hover-rotate">
+                    </div>
+                    <div class="card hover-effect">
+                        <img src="img/examp3.jpg" alt="Dark blur effect" class="hover-dark-blur">
+                    </div>
+                </div>
+        
+                <p>
+                    These effects aren't just for aesthetics. They can draw user's attention to important information,
+                    highlight clickable parts, or make engaging experiences. Justinmind claims that effects play
+                      an important role in guiding users and enhancing the overall experience. 
+                      <a href="https://www.justinmind.com/web-design/animations" target="_blank">[Justinmind]</a>
                 </p>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Vivamus sit amet semper lacus, in mollis libero.
+                    It is important to take accessibility into account. For users who are motion sensitive,
+                     hover effects may be difficult to use and may not be available on touch devices.
+                      When it comes to motion effects, the Web Content Accessibility Guidelines (WCAG) 
+                      advise limiting them and giving alternatives when possible. 
+                      <a href="https://www.w3.org/TR/WCAG21/" target="_blank">[WCAG]</a>
                 </p>
                 <p>
-                    Duis ac turpis duis, convallis a accumsan sit amet, imperdiet suscipit dui. Pellentesque tincidunt dui nec aliquet euismod. Integer ut elit lectus. Sed ac cursus nisi, vel sodales odio. Cras tincidunt eros eget velit congue tempus. Proin vehicula lectus at efficitur sollicitudin. Curabitur luctus velit et ante posuere maximus. Nulla facilisi. Sed volutpat, nulla eu fringilla condimentum, erat ipsum cursus ligula, nec elementum mi arcu ac dolor.
-                </p>
-                <p>
-                    Curabitur imperdiet, ligula vel tincidunt fringilla, felis justo sollicitudin erat, sed gravida elit dolor at turpis. Nunc varius vestibulum leo, vel pretium nunc volutpat at. Vivamus ornare sollicitudin augue at gravida. Quisque condimentum metus id ligula volutpat, eu mollis turpis scelerisque. Curabitur scelerisque ex at nisl tincidunt, eget vehicula turpis consequat. Mauris hendrerit tortor vitae ante posuere tincidunt. 
-                </p>
-                <p>
-                    Nulla facilisi. Nam sed turpis nec purus gravida feugiat. Etiam aliquet orci eget augue elementum, sed faucibus arcu lacinia. Ut et erat ac felis vestibulum cursus. Integer ut tortor nec sapien dignissim sodales. Cras vitae sapien eget metus volutpat mollis sed vel libero. Aenean faucibus justo vitae turpis sollicitudin, et iaculis lorem interdum. Proin sit amet turpis id libero mollis gravida. Donec lacinia, nisl sit amet vehicula fringilla, sapien ante tristique tortor, id pharetra sapien orci ac ante.
+                    For more advanced image hover effects, developers can explore techniques involving CSS transitions,
+                     keyframe animations, and blending modes. With live demos and code samples,
+                      Prismic provides a full tutorial that highlights all sorts of CSS image effects,
+                       such as hover animations and 3D effects. 
+                       <a href="https://prismic.io/blog/css-hover-effects" target="_blank">[prismic]</a>
                 </p>
 
-                
+                <p>
+                    In conclusion, CSS hover effects are an effective way to improve a website's visual appeal.
+                    They can significantly improve the user interface and experience when used carefully and with accessibility in mind.
+                    Image hover effects may give your project the extra polish and engagement it requires,
+                    whether you're creating an interactive portfolio or a minimalist blog.
+                </p>
             </div>
-
-
         </section>
 
-        <section id="video">
-
-        <h2>A Short Video:</h2>
-        <figure id="video-container">
-            <div id="fixed-iframe">
-            <iframe width="560" height="315" 
-                src="https://www.youtube.com/embed/HQTIPPmfFag?si=rYB6o_yylJXS8xQV"
-                title="YouTube video player" 
-                frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media;
-                 gyroscope; picture-in-picture; web-share" 
-                referrerpolicy="strict-origin-when-cross-origin" 
-                allowfullscreen>
-            </iframe>
-            </div>
-         
-          </figure>
-
-        </section>
-
+        <!-- contact info section --> 
         <section id="contact">
 
-            <h2>Contact Us:</h2>
+            <h2>Contact Me:</h2>
 
             <form id="contactform" name="contactform" method="post" data-netlify="true">
 
@@ -213,9 +253,6 @@
 
 
         </section>
-
-
-
 
 
     </main>

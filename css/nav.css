@@ -14,8 +14,6 @@ body {
     padding: 0;
     margin: 0;
 }
-
-
 /* add some padding back to rest of page */
 
 main {
@@ -28,10 +26,11 @@ main {
     color: whitesmoke;
     display: flex;
     flex-direction: column;
+    align-items: center;
     font-size: 1.5rem;
     margin-bottom: 1rem;
     padding: 1rem;
-    
+    justify-content: space-between;
 }
 
 /* logo */
@@ -41,8 +40,8 @@ main {
 }
 
 .logo img {
-    height: 6vw;
-    width: 6vw;
+    height: 5vw;
+    width: 5vw;
 }
 
 .logo h1 {
@@ -57,6 +56,17 @@ main {
     padding: 0.5em 0;
  
 }
+
+.navbar-links ul {
+    display: none;
+    flex-direction: column;
+    text-align: center;
+}
+
+#nav__checkbox:checked ~ .navbar-links ul {
+    display: flex;
+}
+
 
 /*  
  style all a tags in header 
@@ -80,6 +90,33 @@ main {
     outline: none;
 }
 
+/* Hide checkbox input */
+.nav__checkbox {
+    display: none;
+}
+
+/* Style toggle  */
+.nav__toggle {
+    cursor: pointer;
+    margin-left: auto;
+}
+
+/* Hide close icon by default */
+.nav__toggle .close {
+    display: none;
+}
+
+/* When checked, show close icon and hide menu icon */
+#nav__checkbox:checked ~ .nav__toggle .close {
+    display: inline;
+}
+
+#nav__checkbox:checked ~ .nav__toggle .menu {
+    display: none;
+}
+
+
+
 /* 
 media query for non-mobile nav bar
 min-width set to width of nav elements 
@@ -97,16 +134,27 @@ such that no text wraps
     .navbar {
         flex-direction: row;
         justify-content: space-between;
-
+        align-items: center;
     }
 
     .navbar ul {
         display: flex;
         justify-content: space-between;
     }
+
+    .navbar-links ul {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .nav__toggle {
+        display: none;
+        align-items: center;
+        margin-left: auto;
+    }
+
+
 }
-
-
 
 
 
