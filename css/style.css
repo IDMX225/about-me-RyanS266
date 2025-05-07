@@ -116,11 +116,11 @@ header {
     font-size: 15pt;
 }
 
-.blog-code img {
-    width: auto;
-
+.blog-code img{
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
-
 
 /* Image Gallery with Hover Effects */
 .image-gallery {
